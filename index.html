@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentische Fotografie-Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Studentische Fotografie-Initiative</h1>
+        <nav>
+            <ul>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#topics">Themen</a></li>
+                <li><a href="#hours">Öffnungszeiten</a></li>
+                <li><a href="#calendar">Veranstaltungskalender</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="upload">
+        <h2>Fotos hochladen</h2>
+        <input type="file" id="fileInput" accept="image/*">
+        <button onclick="uploadPhoto()">Hochladen</button>
+    </section>
+
+    <section id="download">
+        <h2>Fotos herunterladen</h2>
+        <select id="topicSelector" onchange="filterByTopic()">
+            <option value="all">Alle Themen</option>
+            <!-- Weitere Themen nach Bedarf hinzufügen -->
+            <option value="nature">Natur</option>
+            <option value="events">Veranstaltungen</option>
+        </select>
+        <div id="gallery"></div>
+    </section>
+
+    <section id="topics">
+        <h2>Themen</h2>
+        <!-- Inhalt der Themenabschnitts hier einfügen -->
+    </section>
+
+    <section id="hours">
+        <h2>Öffnungszeiten</h2>
+        <!-- Öffnungszeiteninformation hier einfügen -->
+    </section>
+
+    <section id="calendar">
+        <h2>Veranstaltungskalender</h2>
+        <!-- Veranstaltungskalender hier einfügen -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
